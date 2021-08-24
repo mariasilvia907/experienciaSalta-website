@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('./partials/meta') %>
+  </head>
+  <body>
+    <%- include('./partials/header') %>
+    <section class="fondo-primerafranja">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="color-amarillo"><%= slogan %></h2>
+          </div>
+          <div class="col-12">
+            <h3 class="color-mandarina"><%= frase %></h2>
+          </div>
+          <div class="d-grid gap-2 col-6 col-md-3 mx-auto">
+                <a class="btn btn-primary" href="/experiencias">Empezar viaje virtual</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="info pb-2 pt-5 px-4">
+      <div class="container">
+        <div class="row r-info py-4 px-4 align-items-center">
+          <div class="col-12 col-md-4 image-i justify-content-center">
+            <img src="../images/Grupo174.svg" alt="mapa de argentina">
+          </div>
+          <div class="col-12 col-md-8 info-i">
+            <div class="text-center">
+              <h1 class="color-mandarina">Viví una experiencia 360º</h1>
+              <p class="color-azul">
+                Salta, al norte de Argentina, te sorprende con su gran diversidad cultural, increíbles historias, hermosos paisajes, deliciosas comidas, y grandes experiencias.
+              </p>
+            </div>
+          </div>
+        </div>
+       </div>
+  </main>
+
+<section class="cards">
+  <div class="container-fluid">
+
+    <div class="row title-cards">
+        <div class="col c-title-cards">
+          <h3 class="color-mandarina text-center px-1 py-2">Experiencias destacadas</h3>
+        </div>
+    </div>
+
+    <div class="container-tarjetas">
+      <!-- <div class="row"> -->
+        <% JSONBody.forEach(experiences =>{ %>
+        <div class="item my-3">
+          <div class="card text-center rounded-3 h-100 mx-3" style="width: 18rem;">
+            <img src="<%= experiences.img %>" class="card-img-top rounded-3" alt="<%= experiences.name %>">
+            <div class="card-body">
+              <h4 class="card-title"><%= experiences.name %></h4>
+              <p class="card-text"><%= experiences.description %></p>
+              <a href="<%= experiences.link %>" class="btn btn-primary bg-naranja color-azul">Visitar</a>
+            </div>
+          </div>
+        </div>
+        <% }) %>  
+      </div>
+    </div>      
+  </div>
+</section>
+
+
+<section class="info2 pb-2 pt-5 px-4">
+  <div class="container">
+    <div class="row r-info py-4 px-4 align-items-center justify-content-center">
+      <div class="col-12 col-md-6 info-i">
+        <div class="sumar-experiencia text-md-start text-center">
+          <h2 class="color-mandarina">Sumá tu experiencia</h2>
+          <p class="color-azul">
+            Hacé que los viajeros te elijan cuando lleguen a Salta. 
+          </p>
+          <a class="btn btn-primary bg-naranja color-azul" href="#" target="_blank">Soy empresa</a>
+          <p class="color-azul  mt-5">
+            Hacé que tus reseñas guíen a otros viajeros y obtené beneficios. 
+          </p>
+          <a class="btn btn-primary bg-naranja color-azul" href="#" target="_blank">Soy Viajero</a>
+        </div>
+      </div>
+      <div class="image2-i col-12 col-md-6 justify-content-center mt-5">
+        <img src="./images/ES-logo-pequeño-fondo.png" alt="mapa de argentina">
+      </div>
+    </div>
+   </div>
+</section>
+
+<section class="entrada-destacada-blog">
+  <div class="container-fluid blog-bg-image-1">
+    <div class="row etiquetas">
+      <h5 class="color-blanco ms-3 mt-3">#Güemes</h5>
+    </div>
+    <div class="row">
+      <div class="entrada-blog col-12 text-center">
+          <div class="blog-info">
+            <h4 class="color-amarillo text-sombra my-3 text-center">El rostro de Güemes</h4>
+            <p class="color-blanco text-sombra text-center">Nombre del autor</p>
+            <a class="btn btn-primary bg-naranja color-azul my-3" href="#" target="_blank">Leer entrada</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<%- include('./partials/footer') %>
+</body>
+</html>
+

@@ -1,0 +1,306 @@
+body {
+  margin: 0 auto;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+body{
+  font-family: 'Be Vietnam', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #f8f9fa;
+} 
+
+.navbar-brand img{
+  max-width:160px;
+  display:inline-block;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #363E59;
+  }
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #f28b50;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
+  color: #f28b50;
+  text-decoration: underline #363E59;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.fondo-primerafranja{
+  background-image: url('/images/paisaje-cafayate07.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+
+.fondo-primerafranja h2{
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 1px 1px 4px black;
+  
+}
+
+.fondo-primerafranja h3{
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px black;
+}
+
+@media (max-width: 768px) {
+  .fondo-primerafranja h2{
+      font-size: 2.5rem;
+  }
+}
+
+.color-blanco{
+  color: white;
+}
+
+.color-amarillo{
+  color: #F2C572;
+}
+.color-azul{
+  color: #363E59;
+}
+.color-naranja{
+  color: #F28B50;
+}
+.color-mandarina{
+  color: #F26E50;
+}
+.color-marron{
+  color: #A66253;
+}
+
+.bg-amarillo{
+  background-color: #F2C572;
+}
+.bg-azul {
+  background-color: #363E59;
+}
+.bg-naranja {
+  background-color: #F28B50;
+}
+.bg-mandarina{
+  background-color: #F26E50;
+}
+.bg-marron{
+  background-color: #A66253;
+}
+
+.fondo-primerafranja .container {
+  padding: 200px 20px;
+}
+
+.fondo-primerafranja .btn-primary {
+  color:#363E59;
+  background-color: #F28B50;
+  border-color: #F28B50;
+  box-shadow: 1px 1px 4px black;
+  padding: 0px 5px;
+  font-weight: 600;
+}
+
+.fondo-primerafranja .btn-primary:hover {
+  color: #F28B50;
+  background-color: #363E59;
+  border-color: #363E59;
+}
+
+.image-i img{
+      max-width: 80%;
+      display:inline-block;
+}
+
+.image2-i img{
+  max-width: 100%;
+  display:inline-block;
+}
+
+.image-i, .image2-i{
+  text-align: center;
+}
+
+.info-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-size: 4rem;
+  margin: 25px 0;
+}
+
+.info-i h2{
+  font-size: 4rem;
+  margin: 25px 0;
+}
+
+.info-i
+
+.info-i .text-center p{
+  font-size: 1.3rem;
+  margin: 25px 0
+}
+@media (max-width: 768px) {
+  .image-i img{
+  max-width: 60%;
+  }
+  h1{
+  font-size: 2.5rem;
+  }
+  .info-i h2{
+      font-size: 2.5rem;
+      }
+  .info-i .text-center p{
+  font-size: .9rem;
+  }
+  .px-5 {
+      padding: none;
+  }
+}
+
+@media (max-width: 357px) {
+  .h3, h3 {
+      font-size: 1.4rem;
+  }
+}
+
+.info2 h2{
+  font-size: 3rem;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 3px rgb(136, 136, 136);
+}
+
+.cards .row>* {
+  padding: 10px;
+}
+
+.cards h3{
+  font-size: 2rem;
+}
+
+.cards p{
+  font-size: 1rem;
+}
+
+.card-body h4{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #363E59
+}
+
+.card-body p{
+  font-size: 1rem;
+}
+
+.card .btn-primary {
+  color:#363E59;
+  background-color: #F28B50;
+  border-color: #F28B50;
+  box-shadow: 1px 1px 4px black;
+  padding: 0px 5px;
+  font-weight: 600;
+}
+
+.card .btn-primary:hover {
+  color: #F28B50;
+  background-color: #363E59;
+  border-color: #363E59;
+}
+
+.container-tarjetas {
+  display: flex;
+  overflow-x: auto;
+
+}
+
+.container-tarjetas::-webkit-scrollbar{
+  height:10px;
+  
+}
+
+.container-tarjetas::-webkit-scrollbar-thumb{
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(54, 62, 89, 0.171) 100%);
+  border-radius: 20px;
+}
+
+
+.text-sombra{
+  text-shadow: 2px 2px 3px black
+}
+
+.info2 .btn-primary {
+  color:#363E59;
+  background-color: #F28B50;
+  border-color: #F28B50;
+  box-shadow: 1px 1px 4px black;
+  padding: 0px 5px;
+  font-weight: 600;
+}
+
+.info2 .btn-primary:hover {
+  color: #F28B50;
+  background-color: #363E59;
+  border-color: #363E59;
+}
+
+
+.entrada-destacada-blog{
+  margin: 60px 0px;
+}
+
+.blog-bg-image-1{
+  background-image: url('/images/guemes02.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blog-info{
+  padding: 80px;
+}
+
+.blog-info h4{
+  font-size: 4rem;
+}
+
+@media (max-width: 357px) {
+  .blog-info h4{
+      font-size: 1.6rem;
+  }
+}
+
+
+.pie .footer-image img{
+  max-width: 30%;
+  display:inline-block;
+}
+.pie{
+  margin-top: 0px;
+}
+
+
+
