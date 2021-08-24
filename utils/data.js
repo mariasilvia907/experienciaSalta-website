@@ -30,7 +30,6 @@ const getAllExperiences = (callback) => {
 //     });
 // }
 
-
 module.exports= {
    getAllExperiences
 }
