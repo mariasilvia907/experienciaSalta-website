@@ -247,6 +247,10 @@ h1{
   border-radius: 20px;
 }
 
+.card .card-footer{
+  background-color: none;
+}
+
 
 .text-sombra{
   text-shadow: 2px 2px 3px black
