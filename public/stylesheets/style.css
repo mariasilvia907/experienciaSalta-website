@@ -247,8 +247,10 @@ h1{
   border-radius: 20px;
 }
 
-.card .card-footer{
+.conteiner-tarjetas .card-footer{
   background-color: none;
+  border-top: none;
+  align-items: flex-end;
 }
 
 
