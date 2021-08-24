@@ -1,7 +1,7 @@
 const request = require('postman-request');
 
 const getAllExperiences = (callback) => {
-    request('http://localhost:3001/experiences', (error, res, body) => {
+    request('https://experienciasalta-api.herokuapp.com/experiences', (error, res, body) => {
         if(error){
           console.log('Error', error)  
           return callback(error, undefined);
