@@ -47,7 +47,7 @@
         </div>
     </div>
 
-    <div class="container-tarjetas card-group ">
+    <div class="container-tarjetas">
       <!-- <div class="row"> -->
         <% JSONBody.forEach(experiences =>{ %>
         <div class="item my-3">
@@ -56,9 +56,7 @@
             <div class="card-body">
               <h4 class="card-title"><%= experiences.name %></h4>
               <p class="card-text"><%= experiences.description %></p>
-              <div class="card-footer">
-                <a href="<%= experiences.link %>" class="btn btn-primary bg-naranja color-azul ">Visitar</a>
-              </div>
+              <a href="<%= experiences.link %>" class="btn btn-primary bg-naranja color-azul ">Visitar</a>
             </div>
           </div>
         </div>
