@@ -293,6 +293,21 @@ h1{
   }
 }
 
+.entrada-destacada-blog .btn-primary {
+  color:#363E59;
+  background-color: #F28B50;
+  border-color: #F28B50;
+  box-shadow: 1px 1px 4px black;
+  padding: 0px 5px;
+  font-weight: 600;
+}
+
+.entrada-destacada-blog .btn-primary:hover {
+  color: #F28B50;
+  background-color: #363E59;
+  border-color: #363E59;
+}
+
 
 .pie .footer-image img{
   max-width: 30%;
