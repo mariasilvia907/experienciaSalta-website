@@ -90,15 +90,23 @@
    </div>
 </section>
 
-<div class="card bg-dark text-white">
-  <img src="./images/guemes02.jpg'" class="card-img" alt="Güemes en batalla">
-  <div class="card-img-overlay">
-    <h5 class="card-title">El rostro de Güemes</h5>
-    <p class="card-text">Nombre del autor</p>
-    <p class="card-text">#Güemes</p>
-    <a class="btn btn-primary bg-naranja color-azul my-3" href="#" target="_blank">Leer entrada</a>
-  </div>
-</div>
+<section class="entrada-blog-prueba">
+  <div class="container-tarjetas">
+    <!-- <div class="row"> -->
+      <% JSONBody.forEach(experiences =>{ %>
+      <div class="item my-3">
+        <div class="card text-center rounded-3 h-100 mx-3" style="width: 18rem;">
+          <img src="<%= experiences.img %>" class="card-img-top rounded-3" alt="<%= experiences.name %>">
+          <div class="card-body">
+            <h4 class="card-title"><%= experiences.name %></h4>
+            <p class="card-text"><%= experiences.description %></p>
+            <a href="<%= experiences.link %>" class="btn btn-primary bg-naranja color-azul ">Visitar</a>
+          </div>
+        </div>
+      </div>
+      <% }) %>  
+    </div>
+</section>
 
 
 <section class="entrada-destacada-blog">
@@ -115,9 +123,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
 </section>
-
 <%- include('./partials/footer') %>
 </body>
 </html>
