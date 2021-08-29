@@ -328,7 +328,6 @@ h1{
 .prueba-blog {
   display: flex;
   overflow-x: auto;
-
 }
 
 .prueba-blog::-webkit-scrollbar{
