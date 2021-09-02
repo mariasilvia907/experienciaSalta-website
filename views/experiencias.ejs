@@ -6,27 +6,37 @@
 
   <body>
     <%- include('./partials/header') %>
-
-    <section class="primerafranja-experiencias">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="color-amarillo"><%= slogan %></h2>
+   
+    <section class="cards">
+      <div class="container-fluid">
+        <div class="row title-cards">
+          <div class="primerafranja-experiencias">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h2 class="color-amarillo"><%= slogan %></h2>
+                </div>
+                <div class="col-12">
+                  <h3 class="color-mandarina"><%= frase %></h2>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-12">
-            <h3 class="color-mandarina"><%= frase %></h2>
-          </div>
-          <div class="d-grid gap-2 col-6 col-md-3 mx-auto">
-                <a class="btn btn-primary" href="/experiencias">Empezar viaje virtual</a>
-          </div>
+        </div>
+        <div class="row">        
+            <% JSONBody.forEach(experiences =>{ %>
+              <div class="card text-center rounded-3 h-100 mx-3 col-12 col-sm-6 col-md-3 text-center" style="width: 18rem;">
+                <img src="<%= experiences.img %>" class="card-img-top rounded-3" alt="<%= experiences.name %>">
+                <div class="card-body">
+                  <h4 class="card-title"><%= experiences.name %></h4>
+                  <p class="card-text"><%= experiences.description %></p>
+                  <a href="<%= experiences.link %>" class="btn btn-primary bg-naranja color-azul ">Visitar</a>
+                </div>
+              </div>
+            <% }) %>  
         </div>
       </div>
     </section>
-
-
-
-
-
 
 <!--     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p> -->
