@@ -5,8 +5,6 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('experiencias', {
     title: 'Experiencias'
-    slogan: 'Viajá antes de viajar',
-    frase: 'Conocé Salta en 360º'
 });
 });
 
