@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
     return res.render('experiencias', { 
       title: 'Experiencias',
       slogan: 'Viajá antes de viajar',
-      frase: 'Viví una experiencia 360º',
+      frase: 'Viví experiencias en 360º',
       JSONBody  
     });
   })
