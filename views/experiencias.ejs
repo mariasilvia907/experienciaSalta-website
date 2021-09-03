@@ -23,9 +23,9 @@
             </div>
           </div>
         </div>
-        <div class="row">        
+        <div class="row d-flex justify-content-around">        
             <% JSONBody.forEach(experiences =>{ %>
-              <div class="card text-center rounded-3 h-100 mx-3 col-12 col-sm-6 col-md-3 text-center" style="width: 18rem;">
+              <div class="card text-center rounded-3 mx-3 col-12 col-sm-6 col-md-3 text-center">
                 <img src="<%= experiences.img %>" class="card-img-top rounded-3" alt="<%= experiences.name %>">
                 <div class="card-body">
                   <h4 class="card-title"><%= experiences.name %></h4>
