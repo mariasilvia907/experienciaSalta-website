@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-//const data = require('../utils/data')
-const members = require('../utils/members')
+const data = require('../utils/data')
+//const members = require('../utils/members')
 
 /* GET nosotros page. */
 /* router.get('/', function(req, res, next) {
@@ -9,7 +9,7 @@ const members = require('../utils/members')
 }); */
 
 router.get('/', function(req, res, next) {
-  members.getAllMembers((error, data) => {
+  data.getAllExperiences((error, data) => {
     if(error){
       return res.send({
         error
