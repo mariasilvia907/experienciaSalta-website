@@ -1,7 +1,7 @@
 const request = require('postman-request');
 
-const getAllExperiences = (callback) => {
-    request('https://experienciasalta-api.herokuapp.com/experiences', (error, res, body) => {
+const getAllMembers = (callback) => {
+    request('https://experienciasalta-api.herokuapp.com/members', (error, res, body) => {
         if(error){
           console.log('Error', error)  
           return callback(error, undefined);
@@ -10,11 +10,11 @@ const getAllExperiences = (callback) => {
             if(body){
                return callback(undefined, body);
             }
-            callback("No se encontraron Experiencias", undefined);
+            callback("No se encontraron Miembros del Equipo", undefined);
         }
     });
 }
 
 module.exports= {
-   getAllExperiences
+    getAllMembers
 }
