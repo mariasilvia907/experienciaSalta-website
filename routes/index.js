@@ -16,12 +16,12 @@ router.get('/', function(req, res, next) {
         error
       })
     }
-data.getAllblogNotes((error, data) => {
+/* data.getAllblogNotes((error, data) => {
     if(error){
       return res.send({
           error
         })
-      }
+      } */
 
 const JSONBody = JSON.parse(data);
 
@@ -30,10 +30,10 @@ const JSONBody = JSON.parse(data);
       slogan: 'Viajá antes de viajar',
       frase: 'Una nueva aventura está por comenzar',
       JSONBody
-//      JSONblogNotes
+      
     });
   });
-});
-}) 
+})
+
 
 module.exports = router;
