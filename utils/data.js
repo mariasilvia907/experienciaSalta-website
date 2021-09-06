@@ -13,9 +13,9 @@ const getAllExperiences = (callback) => {
             callback("No se encontraron Experiencias", undefined);
         }
     });
-}
+};
 
-/* const getAllBlogNotes = (callback) => {
+const getAllBlogNotes = (callback) => {
     request('https://experienciasalta-api.herokuapp.com/blognotes', (error, res, body) => {
         if(error){
           console.log('Error', error)  
@@ -28,7 +28,7 @@ const getAllExperiences = (callback) => {
              callback("No se encontraron Notas de Blog", undefined);
          }
      });
-}
+};
 
 const getAllMembers = (callback) => {
     request('https://experienciasalta-api.herokuapp.com/members', (error, res, body) => {
@@ -44,10 +44,10 @@ const getAllMembers = (callback) => {
         }
     });
 }
- */
+
 
 module.exports= {
    getAllExperiences,
-   /* getAllBlogNotes,
-   getAllMembers */
+   getAllBlogNotes,
+   getAllMembers
 }
