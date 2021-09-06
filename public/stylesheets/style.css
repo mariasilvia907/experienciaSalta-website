@@ -361,6 +361,9 @@ h1{
   text-align: center;
 }
 
+.nosotros h2 {
+font-size: 2rem;
+}
 
 /* .prueba-blog {
   display: flex;

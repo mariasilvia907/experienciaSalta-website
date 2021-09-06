@@ -15,7 +15,7 @@ const getAllExperiences = (callback) => {
     });
 }
 
-const getAllBlogNotes = (callback) => {
+/* const getAllBlogNotes = (callback) => {
     request('https://experienciasalta-api.herokuapp.com/blognotes', (error, res, body) => {
         if(error){
           console.log('Error', error)  
@@ -44,9 +44,10 @@ const getAllMembers = (callback) => {
         }
     });
 }
+ */
 
 module.exports= {
    getAllExperiences,
-   getAllBlogNotes,
-   getAllMembers
+   /* getAllBlogNotes,
+   getAllMembers */
 }
