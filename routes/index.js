@@ -16,14 +16,7 @@ router.get('/', function(req, res, next) {
         error
       })
     }
-/* data.getAllblogNotes((error, data) => {
-    if(error){
-      return res.send({
-          error
-        })
-      } */
-
-const JSONBody = JSON.parse(data);
+    const JSONBody = JSON.parse(data);
 
     return res.render('index', { 
       title: 'Inicio',
@@ -33,7 +26,13 @@ const JSONBody = JSON.parse(data);
       
     });
   });
+/*   data.getAllblogNotes((error, data) => {
+    if(error){
+      return res.send({
+          error
+        })
+      }
+  }) */
 })
-
 
 module.exports = router;
